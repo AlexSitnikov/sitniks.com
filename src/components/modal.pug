@@ -1,0 +1,49 @@
+mixin modal()
+	#callback.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+		.modal-dialog.modal-dialog-centered(role='document')
+			.modal-content
+				.modal-header
+					h5.modal-title Написать нам
+					button.close(type='button', data-dismiss='modal', aria-label='Close')
+						span(aria-hidden='true') ×
+				.modal-body
+					form
+						.form-group
+							label.col-form-label Укажите Ваш e-mail
+							input.form-control(type='text')
+						.form-group
+							label.col-form-label(for='message-text') Текст сообщения
+							textarea#message-text.form-control
+				.modal-footer
+					button.btn.btn-secondary(type='button', data-dismiss='modal') Отмена
+					button.btn.btn-primary(type='button') Отправить
+	#add-search.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+		.modal-dialog.modal-dialog-centered(role='document')
+			.modal-content
+				.modal-header
+					h5.modal-title Запомнить схему поиска
+					button.close(type='button', data-dismiss='modal', aria-label='Close')
+						span(aria-hidden='true') ×
+				.modal-body
+					form
+						.form-group
+							label.col-form-label Название схемы
+							input.form-control(type='text')
+				.modal-footer
+					button.btn.btn-secondary(type='button', data-dismiss='modal') Отмена
+					button.btn.btn-primary(type='button') Запомнить
+	#create-table.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+		.modal-dialog.modal-dialog-centered(role='document')
+			.modal-content
+				.modal-header
+					h5.modal-title Создать таблицу
+					button.close(type='button', data-dismiss='modal', aria-label='Close')
+						span(aria-hidden='true') ×
+				.modal-body
+					form
+						.form-group
+							label.col-form-label Название таблици
+							input.form-control(type='text')
+				.modal-footer
+					button.btn.btn-secondary(type='button', data-dismiss='modal') Отмена
+					button.btn.btn-primary(type='button') Создать

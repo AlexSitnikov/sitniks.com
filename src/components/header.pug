@@ -1,0 +1,16 @@
+mixin header()
+	.header
+		.d-flex.justify-content-between.align-items-center.row
+			.col-4
+				a.logo(href='index.html')
+					img(src='img/logo.png', alt='')
+			.col-4
+				.user.dropdown
+					.user__name(data-toggle="dropdown")
+						i.icon-user
+						span sitnikovalex@gmail.com
+					.user__btns.dropdown-menu
+						a.btn.btn-primary.btn-block(href='users.html') Пользователи
+						a.btn.btn-primary.btn-block(href='tables-group.html') Таблицы
+						a.btn.btn-primary.btn-block(href='lk.html') Личные данные
+						a.btn.btn-primary.btn-block(href='login.html') Выйти

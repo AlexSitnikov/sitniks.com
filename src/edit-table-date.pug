@@ -1,0 +1,48 @@
+extends ./layout/index.pug
+
+block content
+	h2.mb-3.text-center Название колонки
+	ol.breadcrumb.mb-3
+		li.breadcrumb-item
+			a(href='index.html') Главная
+		li.breadcrumb-item
+			a(href='tables-group.html') Редактирование таблиц
+		li.breadcrumb-item
+			a(href='edit-table.html') Название таблици
+		li.breadcrumb-item.active(aria-current='page') Название колонки
+	.container
+		.row.mb-3.justify-content-lg-center
+			.col-sm-12.col-lg-6
+				.form-group
+					input.form-control(type='text', placeholder='Название колонки')
+				.form-group
+					select.form-control.selectpicker(data-live-search="false")
+						option Дата
+						option Строка
+						option Коментарий
+						option Телефон
+						option Почта
+						option Список
+						option Автор записи
+						option Дата создания записи
+						option Автор редактирования записи
+						option Дата редактирования записи
+				.form-group
+					select.form-control.selectpicker(data-live-search="false", title='Значение по умолчанию')
+						option Текущая дата
+						option Ручной ввод
+				.form-group
+					select.form-control.selectpicker(data-live-search="false", title="Отоброжать в таблице")
+						option Да
+						option Нет
+				.form-group
+					select.form-control.selectpicker(data-live-search="false", title="Обязательно для заполнения")
+						option Да
+						option Нет
+				.btn-group.d-flex.justify-content-center
+					button.btn.btn-primary Удалить
+					button.btn.btn-primary Сохранить
+
+
+
+append scripts

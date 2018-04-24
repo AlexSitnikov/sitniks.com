@@ -1,0 +1,34 @@
+extends ./layout/index.pug
+
+block content
+	h2.mb-3.text-center Личный данные
+	ol.breadcrumb.mb-3
+		li.breadcrumb-item
+			a(href='index.html') Главная
+		li.breadcrumb-item.active(aria-current='page') Личные данные
+	.container
+		.row.mb-3.justify-content-lg-center
+			.col-sm-12.col-lg-6
+				.form-group
+					input.form-control(type='text', placeholder='ФИО')
+				.form-group
+					input.form-control(type='text', placeholder='email')
+				.form-group
+					select.form-control.selectpicker(data-live-search="false", title='Выберите страну')
+						option Украина
+						option Россия
+				.form-group
+					label Когда выбрали страну показывать это поле с маской страны
+					input.form-control.input-phone(type='text', placeholder='Телефон', data-country='+38(0', data-phone='qq) qqq qq qq')
+				.form-group.has-error
+					input.form-control(type='password', placeholder='Пароль')
+					span.form-text error
+				.form-group.has-error
+					input.form-control(type='password', placeholder='Подтвердить пароль')
+					span.form-text error
+				.btn-group.d-flex.justify-content-center
+					button.btn.btn-primary Изменить
+
+
+
+append scripts

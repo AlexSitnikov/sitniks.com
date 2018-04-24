@@ -1,0 +1,18 @@
+.footer {
+	background-color: #ccc;
+	padding: 10px;
+	border-radius: 10px 10px 0 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: auto;
+}
+
+@include media-breakpoint-down(md) {
+	.footer {
+		border-radius: 0;
+		padding: 10px 65px;
+	}
+}

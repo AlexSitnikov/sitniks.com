@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#cccccc"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <title>Sitniks.com</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css"/>
+  </head>
+  <body>
+    <div class="page d-flex flex-column justify-content-between">
+      <div class="sidebar">
+        <div class="sidebar__btn-open"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="sidebar__items"><a class="sidebar__item" href=""><i class="icon-phone"></i><span>Телефония</span></a><a class="sidebar__item" href=""><i class="icon-envelop"></i><span>СМС рассылка</span></a><a class="sidebar__item" href=""><i class="icon-email"></i><span>e-mail рассылка</span></a><a class="sidebar__item" href=""><i class="icon-telegram"></i><span>Телеграм боты</span></a></div>
+      </div>
+      <div class="sidenav">
+        <div class="sidenav__btn-open"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="sidenav__content">
+          <div class="sidenav__items"><a class="sidenav__item sidenav__list" href="javascript:void(0);" data-toggle="collapse" data-target="#example1" aria-expanded="false">Кастомная група</a>
+            <div class="sidenav__list-items collapse" id="example1"><a class="sidenav__item" href="table.html">Таблица1</a><a class="sidenav__item" href="table.html">Таблица2</a><a class="sidenav__item" href="table.html">Таблица3</a><a class="sidenav__item" href="table.html">Таблица4</a><a class="sidenav__item" href="table.html">Таблица5</a></div><a class="sidenav__item sidenav__list" href="javascript:void(0);" data-toggle="collapse" data-target="#example2" aria-expanded="false">Кастомная група 2</a>
+            <div class="sidenav__list-items collapse" id="example2"><a class="sidenav__item" href="table.html">Таблица1</a><a class="sidenav__item" href="table.html">Таблица2</a><a class="sidenav__item" href="table.html">Таблица3</a><a class="sidenav__item" href="table.html">Таблица4</a><a class="sidenav__item" href="table.html">Таблица5</a></div><a class="sidenav__item" href="table.html">Если ссылка</a>
+          </div>
+        </div>
+      </div>
+      <div class="page__inner">
+        <div class="header">
+          <div class="d-flex justify-content-between align-items-center row">
+            <div class="col-4"><a class="logo" href="index.html"><img src="img/logo.png" alt=""/></a></div>
+            <div class="col-4">
+              <div class="user dropdown">
+                <div class="user__name" data-toggle="dropdown"><i class="icon-user"></i><span>sitnikovalex@gmail.com</span></div>
+                <div class="user__btns dropdown-menu"><a class="btn btn-primary btn-block" href="users.html">Пользователи</a><a class="btn btn-primary btn-block" href="tables-group.html">Таблицы</a><a class="btn btn-primary btn-block" href="lk.html">Личные данные</a><a class="btn btn-primary btn-block" href="login.html">Выйти</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h2 class="mb-3 text-center">Структура таблицы: Название таблици</h2>
+          <ol class="breadcrumb mb-3">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="tables-group.html">Редактирование таблиц</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Название таблици</li>
+          </ol>
+          <div class="change-name mb-3">
+            <div class="change-name__name">
+              <div class="d-flex">
+                <h3 class="tables-group__title mb-0 mr-auto">Название таблици</h3>
+                <div class="btn-group"><a class="btn btn-primary" href="edit-table-add.html" data-toggle="tooltip" data-placement="top" title="Создать колонку"><i class="icon-plus"></i></a>
+                  <button class="btn btn-primary change-name__btn-show" data-toggle="tooltip" data-placement="top" title="Редактировать название"><i class="icon-pencil"></i></button>
+                  <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Удалить таблицу"><i class="icon-bin"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="change-name__edit hide">
+              <div class="input-group">
+                <input class="form-control" type="text" placeholder="Название таблици"/>
+                <div class="input-group-append">
+                  <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Сохранить"><i class="icon-check"></i></button>
+                  <button class="btn btn-primary change-name__btn-cancel" data-toggle="tooltip" data-placement="top" title="Отмена"><i class="icon-cross"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-block">
+            <p>Автор таблици: <span>почта автора</span><span>дата создания</span></p>
+            <p>Автор редактирования таблици: <span>почта автора</span><span>дата создания</span></p>
+          </div>
+          <table class="table table-hover" id="structure-table">
+            <thead>
+              <tr>
+                <th class="tabel-controll tabel-controll2"></th>
+                <th> 
+                  <div class="table-wsnw">Название</div>
+                </th>
+                <th> 
+                  <div class="table-wsnw">Тип</div>
+                </th>
+                <th> 
+                  <div class="table-wsnw">По умолчанию</div>
+                </th>
+                <th> 
+                  <div class="table-wsnw">Отображать</div>
+                </th>
+                <th> 
+                  <div class="table-wsnw">Обязательно</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tabel-controll tabel-controll2">
+                  <div class="table-wsnw btn-group"><a class="btn btn-light" href="edit-table-string.html"><i class="icon-pencil"></i></a>
+                    <div class="btn-group-vertical">
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                    </div>
+                  </div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Выводим название</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Строка</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Значение по умолчанию</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="tabel-controll tabel-controll2">
+                  <div class="table-wsnw btn-group"><a class="btn btn-light" href="edit-table-coment.html"><i class="icon-pencil"></i></a>
+                    <div class="btn-group-vertical">
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                    </div>
+                  </div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Выводим название</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Коментарий</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Значение по умолчанию</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="tabel-controll tabel-controll2">
+                  <div class="table-wsnw btn-group"><a class="btn btn-light" href="edit-table-phone.html"><i class="icon-pencil"></i></a>
+                    <div class="btn-group-vertical">
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                    </div>
+                  </div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Выводим название</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Телефон</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Страна маски</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="tabel-controll tabel-controll2">
+                  <div class="table-wsnw btn-group"><a class="btn btn-light" href="edit-table-email.html"><i class="icon-pencil"></i></a>
+                    <div class="btn-group-vertical">
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                    </div>
+                  </div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Выводим название</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Почта</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Если указанно выводить если нет то пустая ячейка</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="tabel-controll tabel-controll2">
+                  <div class="table-wsnw btn-group"><a class="btn btn-light" href="edit-table-date.html"><i class="icon-pencil"></i></a>
+                    <div class="btn-group-vertical">
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                    </div>
+                  </div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Выводим название</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Дата</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Выводить вариант из списка, если не выбранно то ручной</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="tabel-controll tabel-controll2">
+                  <div class="table-wsnw btn-group"><a class="btn btn-light" href="edit-table-list.html"><i class="icon-pencil"></i></a>
+                    <div class="btn-group-vertical">
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                    </div>
+                  </div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Выводим название</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Список</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw"> </div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="tabel-controll tabel-controll2">
+                  <div class="table-wsnw btn-group"><a class="btn btn-light" href="edit-table-avtor.html"><i class="icon-pencil"></i></a>
+                    <div class="btn-group-vertical">
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                    </div>
+                  </div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Выводим название</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Автор записи</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw"> </div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="tabel-controll tabel-controll2">
+                  <div class="table-wsnw btn-group"><a class="btn btn-light" href="edit-table-avtor.html"><i class="icon-pencil"></i></a>
+                    <div class="btn-group-vertical">
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                      <button class="btn btn-light"><i class="icon-arrow-down"></i></button>
+                    </div>
+                  </div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Выводим название</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Остальные только меняем название</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">Тут выводим пустое поле и значение по умолчанию у них нет</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+                <td> 
+                  <div class="table-wsnw">да</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="copy">&copy; Sitniks.com</div>
+        <button class="btn btn-primary modal-btn-show" data-target="#callback">Написать нам</button>
+      </div>
+    </div>
+    <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Написать нам</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label class="col-form-label">Укажите Ваш e-mail</label>
+                <input class="form-control" type="text"/>
+              </div>
+              <div class="form-group">
+                <label class="col-form-label" for="message-text">Текст сообщения</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+            <button class="btn btn-primary" type="button">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="add-search" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Запомнить схему поиска</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label class="col-form-label">Название схемы</label>
+                <input class="form-control" type="text"/>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+            <button class="btn btn-primary" type="button">Запомнить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="create-table" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Создать таблицу</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label class="col-form-label">Название таблици</label>
+                <input class="form-control" type="text"/>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+            <button class="btn btn-primary" type="button">Создать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/bootstrap-select.min.js"></script>
+    <script src="js/libs/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+extends ./layout/index.pug
+
+block content
+	h2.mb-3.text-center Почта пользователя
+	ol.breadcrumb.mb-3
+		li.breadcrumb-item
+			a(href='index.html') Главная
+		li.breadcrumb-item
+			a(href='users.html') Пользователи
+		li.breadcrumb-item.active(aria-current='page') Почта пользователя
+	.container
+		.row.mb-3.justify-content-lg-center
+			.col-sm-12.col-md-10.col-lg-8
+				.form-group
+					input.form-control(type='text', placeholder='ФИО')
+				.form-group
+					input.form-control(type='text', placeholder='email')
+				.form-group
+					select.form-control.selectpicker(data-live-search="false", title='Выберите страну')
+						option Украина
+						option Россия
+				.form-group
+					label Когда выбрали страну показывать это поле с маской страны
+					input.form-control.input-phone(type='text', placeholder='Телефон', data-country='+38(0', data-phone='qq) qqq qq qq')
+				.form-group
+					label.mb-3 Должность пользователя
+					label.radiobox
+						input.radiobox__input(type='radio', name='position')
+						span.radiobox__rules
+							span.radiobox__main
+							span.radiobox__text Администратор
+					label.radiobox
+						input.radiobox__input(type='radio', name='position', checked='')
+						span.radiobox__rules
+							span.radiobox__main
+							span.radiobox__text Топ менеджер
+					label.radiobox
+						input.radiobox__input(type='radio', name='position')
+						span.radiobox__rules
+							span.radiobox__main
+							span.radiobox__text Менеджер
+					label.radiobox
+						input.radiobox__input(type='radio', name='position')
+						span.radiobox__rules
+							span.radiobox__main
+							span.radiobox__text Пользователь
+				.form-group
+					label.mb-3 Права пользователя
+					.row
+						.col-sm-12.col-lg-6
+							label.checkbox
+								input.checkbox__input(type='checkbox')
+								span.checkbox__rules
+									span.checkbox__main
+									span.checkbox__text Баланс
+							.d-block.pl-3
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Просмотр баланса
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Управление балансом
+							label.checkbox
+								input.checkbox__input(type='checkbox')
+								span.checkbox__rules
+									span.checkbox__main
+									span.checkbox__text Пользователи
+							.d-block.pl-3
+								label.checkbox
+									input.checkbox__input(type='checkbox', checked='')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Просмотр пользователей
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Создание пользователей
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Редактирование пользователей
+						.col-sm-12.col-md-6
+							label.checkbox
+								input.checkbox__input(type='checkbox')
+								span.checkbox__rules
+									span.checkbox__main
+									span.checkbox__text Создание таблиц
+							.d-block.pl-3
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Создавать таблицу
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Редактировать таблицу
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Удалять таблицу
+							label.checkbox
+								input.checkbox__input(type='checkbox', checked='')
+								span.checkbox__rules
+									span.checkbox__main
+									span.checkbox__text Таблицы
+							.d-block.pl-3
+								label.checkbox
+									input.checkbox__input(type='checkbox', checked='')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Создавать запись
+								label.checkbox
+									input.checkbox__input(type='checkbox', checked='')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Редактировать запись
+								label.checkbox
+									input.checkbox__input(type='checkbox', checked='')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Удалять запись
+								label.checkbox
+									input.checkbox__input(type='checkbox', checked='')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Выгрузка таблиц
+				.form-group
+					label.mb-3 Доступ к таблицам
+					.row
+						.col-sm-12.col-lg-6
+							label.checkbox
+								input.checkbox__input(type='checkbox')
+								span.checkbox__rules
+									span.checkbox__main
+									span.checkbox__text Название группа
+							.d-block.pl-3
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Таблица 1
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Таблица 2
+							label.checkbox
+								input.checkbox__input(type='checkbox')
+								span.checkbox__rules
+									span.checkbox__main
+									span.checkbox__text Название группа
+							.d-block.pl-3
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Таблица 1
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Таблица 2
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Таблица 3
+						.col-sm-12.col-md-6
+							label.checkbox
+								input.checkbox__input(type='checkbox')
+								span.checkbox__rules
+									span.checkbox__main
+									span.checkbox__text Название группа
+							.d-block.pl-3
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Таблица 1
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Таблица 2
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Таблица 3
+							label.checkbox
+								input.checkbox__input(type='checkbox')
+								span.checkbox__rules
+									span.checkbox__main
+									span.checkbox__text Название группа
+							.d-block.pl-3
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Таблица 1
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Таблица 2
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Таблица 3
+								label.checkbox
+									input.checkbox__input(type='checkbox')
+									span.checkbox__rules
+										span.checkbox__main
+										span.checkbox__text Таблица 4
+				.btn-group.d-flex.justify-content-center
+					button.btn.btn-primary Отмена
+					button.btn.btn-primary Блокировать
+					button.btn.btn-primary Сбросить пароль
+					button.btn.btn-primary Изменить
+			
+
+
+append scripts

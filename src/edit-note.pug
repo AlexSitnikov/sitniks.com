@@ -1,0 +1,62 @@
+extends ./layout/index.pug
+
+block content
+	h2.mb-3.text-center первая ячейка из таблици
+	ol.breadcrumb.mb-3
+		li.breadcrumb-item
+			a(href='index.html') Главная
+		li.breadcrumb-item
+			a(href='table.html') Таблица
+		li.breadcrumb-item.active(aria-current='page') первая ячейка из таблици
+	.container
+		.row.mb-3.justify-content-lg-center
+			.col-sm-12.col-lg-6
+				.form-group.has-success
+					input.form-control(type='text', placeholder='Строка')
+					span.form-text success
+				.form-group.has-error
+					.input-group
+						input.form-control.input-phone(type='text', placeholder='Телефон', data-country='+38(0', data-phone='qq) qqq qq qq')
+						.input-group-append.align-items-center
+							button.btn.btn-primary(href='', data-toggle="tooltip", data-placement="top", title="Добавить поле")
+								i.icon-plus
+					span.form-text error
+				.form-group
+					.input-group
+						input.form-control.input-phone(type='text', placeholder='Телефон', data-country='+38(0', data-phone='qq) qqq qq qq')
+						.input-group-append.align-items-center
+							button.btn.btn-primary(href='', data-toggle="tooltip", data-placement="top", title="Удалить поле")
+								i.icon-bin
+				.form-group
+					textarea.form-control( placeholder='Коментарий')
+					span.form-text Если нужен вспомогательный текст
+				.form-group
+					.input-group
+						input.form-control(type='text', placeholder='Почта')
+						.input-group-append.align-items-center
+							button.btn.btn-primary(href='', data-toggle="tooltip", data-placement="top", title="Добавить поле")
+								i.icon-plus
+				.form-group
+					.input-group
+						input.form-control(type='text', placeholder='Почта')
+						.input-group-append.align-items-center
+							button.btn.btn-primary(href='', data-toggle="tooltip", data-placement="top", title="Удалить поле")
+								i.icon-bin
+				.form-group
+					label Дата
+					input.form-control(type='date', placeholder='Дата')
+				.form-group
+					select.form-control.selectpicker(data-live-search="false", title="Список")
+						option Схема 1
+						option Схема 2
+						option Схема 3
+						option Схема 4
+						option Схема 5
+						option Схема 6
+				.btn-group.d-flex.justify-content-center
+					button.btn.btn-primary Сохранить
+					button.btn.btn-primary Удалить
+
+
+
+append scripts

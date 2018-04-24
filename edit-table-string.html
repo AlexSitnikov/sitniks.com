@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#cccccc"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <title>Sitniks.com</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css"/>
+  </head>
+  <body>
+    <div class="page d-flex flex-column justify-content-between">
+      <div class="sidebar">
+        <div class="sidebar__btn-open"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="sidebar__items"><a class="sidebar__item" href=""><i class="icon-phone"></i><span>Телефония</span></a><a class="sidebar__item" href=""><i class="icon-envelop"></i><span>СМС рассылка</span></a><a class="sidebar__item" href=""><i class="icon-email"></i><span>e-mail рассылка</span></a><a class="sidebar__item" href=""><i class="icon-telegram"></i><span>Телеграм боты</span></a></div>
+      </div>
+      <div class="sidenav">
+        <div class="sidenav__btn-open"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="sidenav__content">
+          <div class="sidenav__items"><a class="sidenav__item sidenav__list" href="javascript:void(0);" data-toggle="collapse" data-target="#example1" aria-expanded="false">Кастомная група</a>
+            <div class="sidenav__list-items collapse" id="example1"><a class="sidenav__item" href="table.html">Таблица1</a><a class="sidenav__item" href="table.html">Таблица2</a><a class="sidenav__item" href="table.html">Таблица3</a><a class="sidenav__item" href="table.html">Таблица4</a><a class="sidenav__item" href="table.html">Таблица5</a></div><a class="sidenav__item sidenav__list" href="javascript:void(0);" data-toggle="collapse" data-target="#example2" aria-expanded="false">Кастомная група 2</a>
+            <div class="sidenav__list-items collapse" id="example2"><a class="sidenav__item" href="table.html">Таблица1</a><a class="sidenav__item" href="table.html">Таблица2</a><a class="sidenav__item" href="table.html">Таблица3</a><a class="sidenav__item" href="table.html">Таблица4</a><a class="sidenav__item" href="table.html">Таблица5</a></div><a class="sidenav__item" href="table.html">Если ссылка</a>
+          </div>
+        </div>
+      </div>
+      <div class="page__inner">
+        <div class="header">
+          <div class="d-flex justify-content-between align-items-center row">
+            <div class="col-4"><a class="logo" href="index.html"><img src="img/logo.png" alt=""/></a></div>
+            <div class="col-4">
+              <div class="user dropdown">
+                <div class="user__name" data-toggle="dropdown"><i class="icon-user"></i><span>sitnikovalex@gmail.com</span></div>
+                <div class="user__btns dropdown-menu"><a class="btn btn-primary btn-block" href="users.html">Пользователи</a><a class="btn btn-primary btn-block" href="tables-group.html">Таблицы</a><a class="btn btn-primary btn-block" href="lk.html">Личные данные</a><a class="btn btn-primary btn-block" href="login.html">Выйти</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h2 class="mb-3 text-center">Название колонки</h2>
+          <ol class="breadcrumb mb-3">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="tables-group.html">Редактирование таблиц</a></li>
+            <li class="breadcrumb-item"><a href="edit-table.html">Название таблици</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Название колонки</li>
+          </ol>
+          <div class="container">
+            <div class="row mb-3 justify-content-lg-center">
+              <div class="col-sm-12 col-lg-6">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Название колонки"/>
+                </div>
+                <div class="form-group">
+                  <select class="form-control selectpicker" data-live-search="false">
+                    <option>Строка</option>
+                    <option>Коментарий</option>
+                    <option>Телефон</option>
+                    <option>Почта</option>
+                    <option>Дата</option>
+                    <option>Список</option>
+                    <option>Автор записи</option>
+                    <option>Дата создания записи</option>
+                    <option>Автор редактирования записи</option>
+                    <option>Дата редактирования записи</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Значение по умолчанию"/>
+                </div>
+                <div class="form-group">
+                  <select class="form-control selectpicker" data-live-search="false" title="Отоброжать в таблице">
+                    <option>Да</option>
+                    <option>Нет</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control selectpicker" data-live-search="false" title="Обязательно для заполнения">
+                    <option>Да</option>
+                    <option>Нет</option>
+                  </select>
+                </div>
+                <div class="btn-group d-flex justify-content-center">
+                  <button class="btn btn-primary">Удалить</button>
+                  <button class="btn btn-primary">Сохранить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="copy">&copy; Sitniks.com</div>
+        <button class="btn btn-primary modal-btn-show" data-target="#callback">Написать нам</button>
+      </div>
+    </div>
+    <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Написать нам</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label class="col-form-label">Укажите Ваш e-mail</label>
+                <input class="form-control" type="text"/>
+              </div>
+              <div class="form-group">
+                <label class="col-form-label" for="message-text">Текст сообщения</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+            <button class="btn btn-primary" type="button">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="add-search" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Запомнить схему поиска</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label class="col-form-label">Название схемы</label>
+                <input class="form-control" type="text"/>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+            <button class="btn btn-primary" type="button">Запомнить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="create-table" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Создать таблицу</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label class="col-form-label">Название таблици</label>
+                <input class="form-control" type="text"/>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+            <button class="btn btn-primary" type="button">Создать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/bootstrap-select.min.js"></script>
+    <script src="js/libs/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

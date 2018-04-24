@@ -1,0 +1,215 @@
+extends ./layout/index.pug
+
+block content
+	h2.mb-3.text-center Структура таблицы: Название таблици
+	ol.breadcrumb.mb-3
+		li.breadcrumb-item
+			a(href='index.html') Главная
+		li.breadcrumb-item
+			a(href='tables-group.html') Редактирование таблиц
+		li.breadcrumb-item.active(aria-current='page') Название таблици
+	.change-name.mb-3
+		.change-name__name
+			.d-flex
+				h3.tables-group__title.mb-0.mr-auto Название таблици
+				.btn-group
+					a.btn.btn-primary(href='edit-table-add.html', data-toggle="tooltip", data-placement="top", title="Создать колонку")
+						i.icon-plus
+					button.btn.btn-primary.change-name__btn-show(data-toggle="tooltip", data-placement="top", title="Редактировать название")
+						i.icon-pencil
+					button.btn.btn-primary(data-toggle="tooltip", data-placement="top", title="Удалить таблицу")
+						i.icon-bin
+		.change-name__edit.hide
+			.input-group
+				input.form-control(type='text', placeholder='Название таблици')
+				.input-group-append
+					button.btn.btn-primary(data-toggle="tooltip", data-placement="top", title="Сохранить")
+						i.icon-check
+					button.btn.btn-primary.change-name__btn-cancel(data-toggle="tooltip", data-placement="top", title="Отмена")
+						i.icon-cross
+	.d-block
+		p Автор таблици: 
+			span почта автора
+			span дата создания
+		p Автор редактирования таблици: 
+			span почта автора
+			span дата создания
+	table#structure-table.table.table-hover
+		thead
+			tr
+				th.tabel-controll.tabel-controll2
+				th 
+					.table-wsnw Название
+				th 
+					.table-wsnw Тип
+				th 
+					.table-wsnw По умолчанию
+				th 
+					.table-wsnw Отображать
+				th 
+					.table-wsnw Обязательно
+		tbody
+			tr
+				td.tabel-controll.tabel-controll2
+					.table-wsnw.btn-group
+						a.btn.btn-light(href='edit-table-string.html')
+							i.icon-pencil
+						.btn-group-vertical
+							button.btn.btn-light
+								i.icon-arrow-down
+							button.btn.btn-light
+								i.icon-arrow-down
+				td 
+					.table-wsnw Выводим название
+				td 
+					.table-wsnw Строка
+				td 
+					.table-wsnw Значение по умолчанию
+				td 
+					.table-wsnw да
+				td 
+					.table-wsnw да
+			tr
+				td.tabel-controll.tabel-controll2
+					.table-wsnw.btn-group
+						a.btn.btn-light(href='edit-table-coment.html')
+							i.icon-pencil
+						.btn-group-vertical
+							button.btn.btn-light
+								i.icon-arrow-down
+							button.btn.btn-light
+								i.icon-arrow-down
+				td 
+					.table-wsnw Выводим название
+				td 
+					.table-wsnw Коментарий
+				td 
+					.table-wsnw Значение по умолчанию
+				td 
+					.table-wsnw да
+				td 
+					.table-wsnw да
+			tr
+				td.tabel-controll.tabel-controll2
+					.table-wsnw.btn-group
+						a.btn.btn-light(href='edit-table-phone.html')
+							i.icon-pencil
+						.btn-group-vertical
+							button.btn.btn-light
+								i.icon-arrow-down
+							button.btn.btn-light
+								i.icon-arrow-down
+				td 
+					.table-wsnw Выводим название
+				td 
+					.table-wsnw Телефон
+				td 
+					.table-wsnw Страна маски
+				td 
+					.table-wsnw да
+				td 
+					.table-wsnw да
+			tr
+				td.tabel-controll.tabel-controll2
+					.table-wsnw.btn-group
+						a.btn.btn-light(href='edit-table-email.html')
+							i.icon-pencil
+						.btn-group-vertical
+							button.btn.btn-light
+								i.icon-arrow-down
+							button.btn.btn-light
+								i.icon-arrow-down
+				td 
+					.table-wsnw Выводим название
+				td 
+					.table-wsnw Почта
+				td 
+					.table-wsnw Если указанно выводить если нет то пустая ячейка
+				td 
+					.table-wsnw да
+				td 
+					.table-wsnw да
+			tr
+				td.tabel-controll.tabel-controll2
+					.table-wsnw.btn-group
+						a.btn.btn-light(href='edit-table-date.html')
+							i.icon-pencil
+						.btn-group-vertical
+							button.btn.btn-light
+								i.icon-arrow-down
+							button.btn.btn-light
+								i.icon-arrow-down
+				td 
+					.table-wsnw Выводим название
+				td 
+					.table-wsnw Дата
+				td 
+					.table-wsnw Выводить вариант из списка, если не выбранно то ручной
+				td 
+					.table-wsnw да
+				td 
+					.table-wsnw да
+			tr
+				td.tabel-controll.tabel-controll2
+					.table-wsnw.btn-group
+						a.btn.btn-light(href='edit-table-list.html')
+							i.icon-pencil
+						.btn-group-vertical
+							button.btn.btn-light
+								i.icon-arrow-down
+							button.btn.btn-light
+								i.icon-arrow-down
+				td 
+					.table-wsnw Выводим название
+				td 
+					.table-wsnw Список
+				td 
+					.table-wsnw 
+				td 
+					.table-wsnw да
+				td 
+					.table-wsnw да
+			tr
+				td.tabel-controll.tabel-controll2
+					.table-wsnw.btn-group
+						a.btn.btn-light(href='edit-table-avtor.html')
+							i.icon-pencil
+						.btn-group-vertical
+							button.btn.btn-light
+								i.icon-arrow-down
+							button.btn.btn-light
+								i.icon-arrow-down
+				td 
+					.table-wsnw Выводим название
+				td 
+					.table-wsnw Автор записи
+				td 
+					.table-wsnw 
+				td 
+					.table-wsnw да
+				td 
+					.table-wsnw да
+			tr
+				td.tabel-controll.tabel-controll2
+					.table-wsnw.btn-group
+						a.btn.btn-light(href='edit-table-avtor.html')
+							i.icon-pencil
+						.btn-group-vertical
+							button.btn.btn-light
+								i.icon-arrow-down
+							button.btn.btn-light
+								i.icon-arrow-down
+				td 
+					.table-wsnw Выводим название
+				td 
+					.table-wsnw Остальные только меняем название
+				td 
+					.table-wsnw Тут выводим пустое поле и значение по умолчанию у них нет
+				td 
+					.table-wsnw да
+				td 
+					.table-wsnw да
+
+
+
+append scripts

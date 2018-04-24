@@ -1,0 +1,37 @@
+include ../components/sidenav.pug
+include ../components/sidebar.pug
+include ../components/footer.pug
+include ../components/header.pug
+include ../components/modal.pug
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(name='theme-color', content='#cccccc')
+		meta(name='description', content='')
+		meta(name='keywords', content='')
+		title Sitniks.com
+		link(rel="stylesheet", href="css/style.css")
+		link(rel='stylesheet', type='text/css', href='https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css')
+	body
+		.page.d-flex.flex-column.justify-content-between
+			+sidebar()
+			+sidenav()
+			.page__inner
+				+header()
+				.content
+					block content
+			+footer()
+		+modal()
+
+		block scripts
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+			script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
+			script(src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js')
+			script(src='https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js')
+			script(src='https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js')
+			script(src="js/libs/bootstrap.min.js")
+			script(src="js/libs/bootstrap-select.min.js")
+			script(src="js/libs/jquery.maskedinput.min.js")
+			script(src="js/main.js")

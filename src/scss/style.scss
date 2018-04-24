@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+@import 'bootstrap/bootstrap';
+@import 'reset';
+@import 'icons';
+
+// libs
+@import 'libs/bootstrap-select';
+
+// components
+@import 'components/form';
+@import 'components/table';
+
+// block
+@import 'block/header';
+@import 'block/footer';
+@import 'block/sidebar';
+@import 'block/sidenav';
+@import 'block/promo';
+@import 'block/advanced-search';
+@import 'block/tables-group';
+
+.page {
+	min-height: 100%;
+    transition: padding 0.3s ease-in 0s;
+    padding: 0 65px;
+    overflow: hidden;
+
+    &__inner {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: auto;
+    }
+
+    .content {
+    	padding: 15px 0;
+    }
+
+    @include media-breakpoint-down(md) {
+    	padding: 0;
+
+    	.content {
+    		padding: 10px 60px;
+    	}
+    }
+}
+
+.change-name {
+
+    .hide {
+        display: none;
+    }
+}

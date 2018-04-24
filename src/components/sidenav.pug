@@ -1,0 +1,26 @@
+mixin sidenav()
+	.sidenav
+		.sidenav__btn-open
+			span
+			span
+			span
+			span
+			span
+			span
+		.sidenav__content
+			.sidenav__items
+				a.sidenav__item.sidenav__list(href='javascript:void(0);', data-toggle="collapse", data-target="#example1", aria-expanded="false") Кастомная група
+				.sidenav__list-items.collapse#example1
+					a.sidenav__item(href='table.html') Таблица1
+					a.sidenav__item(href='table.html') Таблица2
+					a.sidenav__item(href='table.html') Таблица3
+					a.sidenav__item(href='table.html') Таблица4
+					a.sidenav__item(href='table.html') Таблица5
+				a.sidenav__item.sidenav__list(href='javascript:void(0);', data-toggle="collapse", data-target="#example2", aria-expanded="false") Кастомная група 2
+				.sidenav__list-items.collapse#example2
+					a.sidenav__item(href='table.html') Таблица1
+					a.sidenav__item(href='table.html') Таблица2
+					a.sidenav__item(href='table.html') Таблица3
+					a.sidenav__item(href='table.html') Таблица4
+					a.sidenav__item(href='table.html') Таблица5
+				a.sidenav__item(href='table.html') Если ссылка

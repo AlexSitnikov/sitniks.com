@@ -1,0 +1,93 @@
+extends ./layout/index.pug
+
+block content
+	h2.mb-3.text-center Пользователи
+	ol.breadcrumb.mb-3
+		li.breadcrumb-item
+			a(href='index.html') Главная
+		li.breadcrumb-item.active(aria-current='page') Пользователи
+	.btn-group.mb-3
+		a.btn.btn-primary(href='user-add.html', data-toggle="tooltip", data-placement="top", title="Добавить пользователя")
+			i.icon-plus
+	table#users-table.table.table-hover
+		thead
+			tr
+				th.tabel-controll
+				th 
+					.table-wsnw Ф.И.О.
+				th 
+					.table-wsnw Почта
+				th 
+					.table-wsnw Телефон
+				th 
+					.table-wsnw Должность
+				th 
+					.table-wsnw Создатель
+		tbody
+			tr
+				td.tabel-controll.tabel-controll2
+					.table-wsnw.btn-group
+						a.btn.btn-light(href='user-administrator.html')
+							i.icon-pencil
+				td 
+					.table-wsnw Ситников Алексей Михайлович
+				td 
+					.table-wsnw sitnikovalexbbk@gmail.com
+				td 
+					.table-wsnw +38(066)940-40-89 Если Украина
+					.table-wsnw +7(921)940-40-89 Если Россия
+				td 
+					.table-wsnw Администратор
+				td 
+					.table-wsnw Создателя почта
+			tr
+				td.tabel-controll.tabel-controll2
+					.table-wsnw.btn-group
+						a.btn.btn-light(href='user-topmanger.html')
+							i.icon-pencil
+				td 
+					.table-wsnw Ситников Алексей Михайлович
+				td 
+					.table-wsnw sitnikovalexbbk@gmail.com
+				td 
+					.table-wsnw +38(066)940-40-89 Если Украина
+					.table-wsnw +7(921)940-40-89 Если Россия
+				td 
+					.table-wsnw Топ менеджер
+				td 
+					.table-wsnw Создателя почта
+			tr
+				td.tabel-controll.tabel-controll2
+					.table-wsnw.btn-group
+						a.btn.btn-light(href='user-manger.html')
+							i.icon-pencil
+				td 
+					.table-wsnw Ситников Алексей Михайлович
+				td 
+					.table-wsnw sitnikovalexbbk@gmail.com
+				td 
+					.table-wsnw +38(066)940-40-89 Если Украина
+					.table-wsnw +7(921)940-40-89 Если Россия
+				td 
+					.table-wsnw Менеджер
+				td 
+					.table-wsnw Создателя почта
+			tr
+				td.tabel-controll.tabel-controll2
+					.table-wsnw.btn-group
+						a.btn.btn-light(href='user-user.html')
+							i.icon-pencil
+				td 
+					.table-wsnw Ситников Алексей Михайлович
+				td 
+					.table-wsnw sitnikovalexbbk@gmail.com
+				td 
+					.table-wsnw +38(066)940-40-89 Если Украина
+					.table-wsnw +7(921)940-40-89 Если Россия
+				td 
+					.table-wsnw Пользователь
+				td 
+					.table-wsnw Создателя почта
+
+
+append scripts

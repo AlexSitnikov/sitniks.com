@@ -1,0 +1,20 @@
+extends ./layout/index.pug
+
+block content
+	h2.mb-3.text-center Авторизация
+	.container
+		.row.mb-3.justify-content-lg-center
+			.col-sm-12.col-lg-6
+				.form-group.has-success
+					input.form-control(type='text', placeholder='Логин')
+					span.form-text success
+				.form-group.has-error
+					input.form-control(type='password', placeholder='Пароль')
+					span.form-text error
+				.btn-group.d-flex.justify-content-center
+					a.btn.btn-link(href='registration.html') Регистрация
+					button.btn.btn-primary Войти
+
+
+
+append scripts

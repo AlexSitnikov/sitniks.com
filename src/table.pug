@@ -1,0 +1,171 @@
+extends ./layout/index.pug
+
+block content
+	h2.mb-3.text-center Название таблици
+	ol.breadcrumb.mb-3
+		li.breadcrumb-item
+			a(href='index.html') Главная
+		li.breadcrumb-item.active(aria-current='page') Название таблици
+	
+	.btn-group.mb-3
+		a.btn.btn-primary(href='add-note.html', data-toggle="tooltip", data-placement="top", title="Создать запись")
+			i.icon-plus
+		button.btn.btn-primary(data-toggle="tooltip", data-placement="top", title="Экспорт таблицы")
+			i.icon-download3
+		button.btn.btn-primary.advanced-search__btn-open(data-toggle="tooltip", data-placement="top", title="Расширенный поиск")
+			i.icon-search
+	.advanced-search.container
+		.row.mb-3.justify-content-lg-center
+			.col-sm-12.col-lg-6
+				.form-group
+					.input-group
+						select.form-control.selectpicker(data-live-search="true", title="Выбирите схему")
+							option Схема 1
+							option Схема 2
+							option Схема 3
+							option Схема 4
+							option Схема 5
+							option Схема 6
+						.input-group-append
+							button.btn.btn-primary(data-toggle="tooltip", data-placement="top", title="Удалить схему")
+								i.icon-bin
+				.form-group.has-success
+					.input-group
+						input.form-control(type='text', placeholder='Строка')
+						.input-group-append.align-items-center.pl-3.pr-3
+							label.checkbox.mb-0(data-toggle="tooltip", data-placement="top", title="Отоброжать в поиске")
+								input.checkbox__input(type='checkbox', checked='')
+								span.checkbox__rules
+									span.checkbox__main
+					span.form-text success
+				.form-group.has-error
+					.input-group
+						input.form-control.input-phone(type='text', placeholder='Телефон', data-country='+38(0', data-phone='qq) qqq qq qq')
+						.input-group-append.align-items-center.pl-3.pr-3
+							label.checkbox.mb-0(data-toggle="tooltip", data-placement="top", title="Отоброжать в поиске")
+								input.checkbox__input(type='checkbox', checked='')
+								span.checkbox__rules
+									span.checkbox__main
+					span.form-text error
+				.form-group
+					.input-group
+						textarea.form-control( placeholder='Коментарий')
+						.input-group-append.align-items-center.pl-3.pr-3
+							label.checkbox.mb-0(data-toggle="tooltip", data-placement="top", title="Отоброжать в поиске")
+								input.checkbox__input(type='checkbox', checked='')
+								span.checkbox__rules
+									span.checkbox__main
+					span.form-text Если нужен вспомогательный текст
+				.form-group
+					.input-group
+						input.form-control(type='text', placeholder='Почта')
+						.input-group-append.align-items-center.pl-3.pr-3
+							label.checkbox.mb-0(data-toggle="tooltip", data-placement="top", title="Отоброжать в поиске")
+								input.checkbox__input(type='checkbox', checked='')
+								span.checkbox__rules
+									span.checkbox__main
+				.form-group
+					label Дата название столбика
+					.input-group
+						input.form-control(type='date', placeholder='Дата')
+						.input-group-append.align-items-center.pl-3.pr-3
+							label.checkbox.mb-0(data-toggle="tooltip", data-placement="top", title="Отоброжать в поиске")
+								input.checkbox__input(type='checkbox', checked='')
+								span.checkbox__rules
+									span.checkbox__main
+				.form-group
+					.input-group
+						select.form-control.selectpicker(data-live-search="true", title="Список")
+							option Схема 1
+							option Схема 2
+							option Схема 3
+							option Схема 4
+							option Схема 5
+							option Схема 6
+						.input-group-append.align-items-center.pl-3.pr-3
+							label.checkbox.mb-0(data-toggle="tooltip", data-placement="top", title="Отоброжать в поиске")
+								input.checkbox__input(type='checkbox', checked='')
+								span.checkbox__rules
+									span.checkbox__main
+				.form-group
+					.input-group
+						input.form-control(type='text', placeholder='Автор записи')
+						.input-group-append.align-items-center.pl-3.pr-3
+							label.checkbox.mb-0(data-toggle="tooltip", data-placement="top", title="Отоброжать в поиске")
+								input.checkbox__input(type='checkbox', checked='')
+								span.checkbox__rules
+									span.checkbox__main
+				.form-group
+					label Дата создания записи
+					.input-group
+						input.form-control(type='date', placeholder='Дата')
+						.input-group-append.align-items-center.pl-3.pr-3
+							label.checkbox.mb-0(data-toggle="tooltip", data-placement="top", title="Отоброжать в поиске")
+								input.checkbox__input(type='checkbox', checked='')
+								span.checkbox__rules
+									span.checkbox__main
+				.form-group
+					.input-group
+						input.form-control(type='text', placeholder='Автор редактирования записи')
+						.input-group-append.align-items-center.pl-3.pr-3
+							label.checkbox.mb-0(data-toggle="tooltip", data-placement="top", title="Отоброжать в поиске")
+								input.checkbox__input(type='checkbox', checked='')
+								span.checkbox__rules
+									span.checkbox__main
+				.form-group
+					label Дата редактирования записи
+					.input-group
+						input.form-control(type='date', placeholder='Дата')
+						.input-group-append.align-items-center.pl-3.pr-3
+							label.checkbox.mb-0(data-toggle="tooltip", data-placement="top", title="Отоброжать в поиске")
+								input.checkbox__input(type='checkbox', checked='')
+								span.checkbox__rules
+									span.checkbox__main
+				.btn-group.d-flex.justify-content-center
+					button.btn.btn-primary.modal-btn-show(data-target="#add-search", data-toggle="tooltip", data-placement="top", title="Запомнить схему поиска") Запомнить
+					button.btn.btn-primary Поиск
+
+	table#main-table.table.table-hover
+		thead
+			tr
+				th.tabel-controll
+				th 
+					.table-wsnw Name
+				th 
+					.table-wsnw Position
+				th 
+					.table-wsnw Office
+				th 
+					.table-wsnw Age
+				th 
+					.table-wsnw Start date
+				th 
+					.table-wsnw Salary
+				th
+					.table-wsnw Коментарий
+		tbody
+			- for (var x = 0; x < 100; x++)
+				tr
+					td.tabel-controll
+						.table-wsnw.btn-group
+							a.btn.btn-light(href='edit-note.html')
+								i.icon-pencil
+					td 
+						.table-wsnw Tiger Nixon
+					td 
+						.table-wsnw +38(066)940 40 89
+						.table-wsnw +38(066)940 40 89
+					td 
+						.table-wsnw sitnikovalexbbk@gmail.com
+					td 
+						.table-wsnw 61
+					td 
+						.table-wsnw 2011/04/25
+					td 
+						.table-wsnw $320,800
+					td
+						.td-comment Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+
+
+
+append scripts
