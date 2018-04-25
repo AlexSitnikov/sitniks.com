@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css"/>
   </head>
   <body>
-    <div class="page d-flex flex-column justify-content-between">
+    <div class="page d-flex flex-column justify-content-between sidebar_not">
       <div class="sidebar">
         <div class="sidebar__btn-open"><span></span><span></span><span></span><span></span><span></span><span></span></div>
         <div class="sidebar__items"><a class="sidebar__item" href=""><i class="icon-phone"></i><span>Телефония</span></a><a class="sidebar__item" href=""><i class="icon-envelop"></i><span>СМС рассылка</span></a><a class="sidebar__item" href=""><i class="icon-email"></i><span>e-mail рассылка</span></a><a class="sidebar__item" href=""><i class="icon-telegram"></i><span>Телеграм боты</span></a></div>
@@ -32,352 +32,460 @@
             <div class="col-4">
               <div class="user dropdown">
                 <div class="user__name" data-toggle="dropdown"><i class="icon-user"></i><span>sitnikovalex@gmail.com</span></div>
-                <div class="user__btns dropdown-menu"><a class="btn btn-primary btn-block" href="users.html">Пользователи</a><a class="btn btn-primary btn-block" href="tables-group.html">Таблицы</a><a class="btn btn-primary btn-block" href="lk.html">Личные данные</a><a class="btn btn-primary btn-block" href="login.html">Выйти</a></div>
+                <div class="user__btns dropdown-menu"><a class="btn btn-primary btn-block" href="users.html">Пользователи</a><a class="btn btn-primary btn-block" href="lk.html">Личные данные</a><a class="btn btn-primary btn-block" href="login.html">Выйти</a></div>
               </div>
             </div>
           </div>
         </div>
         <div class="content">
-          <div class="promo">
-            <h2 class="promo__title">Название группы</h2>
+          <div class="btn-group mb-3">
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Создать группу"><i class="icon-plus"></i></button>
+          </div>
+          <div class="promo mb-4">
+            <h2 class="text-center mb-4">Название группы</h2>
+            <div class="change-name mb-4">
+              <div class="change-name__name">
+                <div class="d-flex">
+                  <h3 class="mb-0 mr-auto">Название группы</h3>
+                  <div class="btn-group">
+                    <button class="btn btn-primary modal-btn-show" data-toggle="tooltip" data-placement="top" title="Создать таблицу" data-target="#create-table"><i class="icon-plus"></i></button>
+                    <button class="btn btn-primary change-name__btn-show" data-toggle="tooltip" data-placement="top" title="Редактировать название"><i class="icon-pencil"></i></button>
+                    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Удалить группу"><i class="icon-bin"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="change-name__edit hide">
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Название группы"/>
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Сохранить"><i class="icon-check"></i></button>
+                    <button class="btn btn-primary change-name__btn-cancel" data-toggle="tooltip" data-placement="top" title="Отмена"><i class="icon-cross"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="promo__items row">
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3 Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                    <li>Название колонки 8</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                    <li>Название колонки 8</li>
-                    <li>Название колонки 9</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                    <li>Название колонки 8</li>
-                    <li>Название колонки 9</li>
-                    <li>Название колонки 10</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                  </ul></a></div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3 Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                      <li>Название колонки 7</li>
+                      <li>Название колонки 8</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3 Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3 Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                      <li>Название колонки 7</li>
+                      <li>Название колонки 8</li>
+                      <li>Название колонки 9</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                    </ul></a></div>
+              </div>
             </div>
           </div>
-          <div class="promo">
-            <h2 class="promo__title">Название группы</h2>
+          <div class="promo mb-4">
+            <h2 class="text-center mb-4">Название группы</h2>
+            <div class="change-name mb-4">
+              <div class="change-name__name">
+                <div class="d-flex">
+                  <h3 class="mb-0 mr-auto">Название группы</h3>
+                  <div class="btn-group">
+                    <button class="btn btn-primary modal-btn-show" data-toggle="tooltip" data-placement="top" title="Создать таблицу" data-target="#create-table"><i class="icon-plus"></i></button>
+                    <button class="btn btn-primary change-name__btn-show" data-toggle="tooltip" data-placement="top" title="Редактировать название"><i class="icon-pencil"></i></button>
+                    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Удалить группу"><i class="icon-bin"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="change-name__edit hide">
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Название группы"/>
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Сохранить"><i class="icon-check"></i></button>
+                    <button class="btn btn-primary change-name__btn-cancel" data-toggle="tooltip" data-placement="top" title="Отмена"><i class="icon-cross"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="promo__items row">
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3 Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                    <li>Название колонки 8</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                    <li>Название колонки 8</li>
-                    <li>Название колонки 9</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                    <li>Название колонки 8</li>
-                    <li>Название колонки 9</li>
-                    <li>Название колонки 10</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                  </ul></a></div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3 Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                      <li>Название колонки 7</li>
+                      <li>Название колонки 8</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3 Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3 Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                      <li>Название колонки 7</li>
+                      <li>Название колонки 8</li>
+                      <li>Название колонки 9</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                    </ul></a></div>
+              </div>
             </div>
           </div>
-          <div class="promo">
-            <h2 class="promo__title">Название группы</h2>
+          <div class="promo mb-4">
+            <h2 class="text-center mb-4">Название группы</h2>
+            <div class="change-name mb-4">
+              <div class="change-name__name">
+                <div class="d-flex">
+                  <h3 class="mb-0 mr-auto">Название группы</h3>
+                  <div class="btn-group">
+                    <button class="btn btn-primary modal-btn-show" data-toggle="tooltip" data-placement="top" title="Создать таблицу" data-target="#create-table"><i class="icon-plus"></i></button>
+                    <button class="btn btn-primary change-name__btn-show" data-toggle="tooltip" data-placement="top" title="Редактировать название"><i class="icon-pencil"></i></button>
+                    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Удалить группу"><i class="icon-bin"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="change-name__edit hide">
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Название группы"/>
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Сохранить"><i class="icon-check"></i></button>
+                    <button class="btn btn-primary change-name__btn-cancel" data-toggle="tooltip" data-placement="top" title="Отмена"><i class="icon-cross"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="promo__items row">
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3 Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                    <li>Название колонки 8</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                    <li>Название колонки 8</li>
-                    <li>Название колонки 9</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                    <li>Название колонки 8</li>
-                    <li>Название колонки 9</li>
-                    <li>Название колонки 10</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                    <li>Название колонки 4</li>
-                    <li>Название колонки 5</li>
-                    <li>Название колонки 6</li>
-                    <li>Название колонки 7</li>
-                  </ul></a></div>
-              <div class="col"><a class="promo__item" href="table.html">
-                  <h5>Название таблици</h5>
-                  <ul>
-                    <li>Название колонки 1</li>
-                    <li>Название колонки 2</li>
-                    <li>Название колонки 3</li>
-                  </ul></a></div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3 Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                      <li>Название колонки 7</li>
+                      <li>Название колонки 8</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3 Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3 Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                      <li>Название колонки 5</li>
+                      <li>Название колонки 6</li>
+                      <li>Название колонки 7</li>
+                      <li>Название колонки 8</li>
+                      <li>Название колонки 9</li>
+                    </ul></a></div>
+              </div>
+              <div class="col">
+                <div class="promo__item"><a class="btn btn-primary" href="edit-table.html" data-toggle="tooltip" data-placement="top" title="Редактировать таблицу"><i class="icon-pencil"></i></a><a class="promo__item-link" href="table.html">
+                    <h5>Название таблици</h5>
+                    <ul>
+                      <li>Название колонки 1</li>
+                      <li>Название колонки 2</li>
+                      <li>Название колонки 3</li>
+                      <li>Название колонки 4</li>
+                    </ul></a></div>
+              </div>
             </div>
           </div>
         </div>

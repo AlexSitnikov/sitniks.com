@@ -1,10 +1,4 @@
 .promo {
-	margin-bottom: 20px;
-
-	&__title {
-		text-align: center;
-		margin-bottom: 20px;
-	}
 
 	&__items {
 		margin-left: -5px;
@@ -58,12 +52,34 @@
 		transform: translateY(0px);
 		outline: none;
 		white-space: nowrap;
+		position: relative;
 
 		&:hover {
-			text-decoration: none;
-			color: #000;
 			transform: translateY(-10px);
 			border-color: #D7D7D7;
+
+			.btn {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+		
+		.btn {
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			visibility: hidden;
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+
+		&-link {
+			display: block;
+			
+			&:hover {
+				color: #000;
+				text-decoration: none;
+			}
 		}
 
 		h5 {

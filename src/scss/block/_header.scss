@@ -55,10 +55,3 @@
 		max-width: 200px;
 	}
 }
-
-@include media-breakpoint-down(md) {
-	.header {
-		border-radius: 0;
-		padding: 10px 65px;
-	}
-}

@@ -9,10 +9,3 @@
 	flex-shrink: 0;
 	flex-basis: auto;
 }
-
-@include media-breakpoint-down(md) {
-	.footer {
-		border-radius: 0;
-		padding: 10px 65px;
-	}
-}

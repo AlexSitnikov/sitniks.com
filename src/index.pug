@@ -1,119 +1,166 @@
 extends ./layout/index.pug
 
 block content
+	.btn-group.mb-3
+		button.btn.btn-primary(data-toggle="tooltip", data-placement="top", title="Создать группу")
+			i.icon-plus
 	- for (var x = 0; x < 3; x++)
-		.promo
-			h2.promo__title Название группы
+		.promo.mb-4
+			h2.text-center.mb-4 Название группы
+			.change-name.mb-4
+				.change-name__name
+					.d-flex
+						h3.mb-0.mr-auto Название группы
+						.btn-group
+							button.btn.btn-primary.modal-btn-show(data-toggle="tooltip", data-placement="top", title="Создать таблицу", data-target='#create-table')
+								i.icon-plus
+							button.btn.btn-primary.change-name__btn-show(data-toggle="tooltip", data-placement="top", title="Редактировать название")
+								i.icon-pencil
+							button.btn.btn-primary(data-toggle="tooltip", data-placement="top", title="Удалить группу")
+								i.icon-bin
+				.change-name__edit.hide
+					.input-group
+						input.form-control(type='text', placeholder='Название группы')
+						.input-group-append
+							button.btn.btn-primary(data-toggle="tooltip", data-placement="top", title="Сохранить")
+								i.icon-check
+							button.btn.btn-primary.change-name__btn-cancel(data-toggle="tooltip", data-placement="top", title="Отмена")
+								i.icon-cross
 			.promo__items.row
 					.col
-						a.promo__item(href='table.html')
-							h5 Название таблици
-							ul
-								li Название колонки 1
-								li Название колонки 2
-								li Название колонки 3 Название колонки 3
-								li Название колонки 4
+						.promo__item
+							a.btn.btn-primary(href='edit-table.html', data-toggle="tooltip", data-placement="top", title="Редактировать таблицу")
+								i.icon-pencil
+							a.promo__item-link(href='table.html')
+								h5 Название таблици
+								ul
+									li Название колонки 1
+									li Название колонки 2
+									li Название колонки 3 Название колонки 3
+									li Название колонки 4
 					.col
-						a.promo__item(href='table.html')
-							h5 Название таблици
-							ul
-								li Название колонки 1
-								li Название колонки 2
-								li Название колонки 3
-								li Название колонки 4
-								li Название колонки 5
-								li Название колонки 6
-								li Название колонки 7
+						.promo__item
+							a.btn.btn-primary(href='edit-table.html', data-toggle="tooltip", data-placement="top", title="Редактировать таблицу")
+								i.icon-pencil
+							a.promo__item-link(href='table.html')
+								h5 Название таблици Название таблици
+								ul
+									li Название колонки 1
+									li Название колонки 2
+									li Название колонки 3
+									li Название колонки 4
+									li Название колонки 5
+									li Название колонки 6
 					.col
-						a.promo__item(href='table.html')
-							h5 Название таблици
-							ul
-								li Название колонки 1
-								li Название колонки 2
-								li Название колонки 3
-								li Название колонки 4
-								li Название колонки 5
+						.promo__item
+							a.btn.btn-primary(href='edit-table.html', data-toggle="tooltip", data-placement="top", title="Редактировать таблицу")
+								i.icon-pencil
+							a.promo__item-link(href='table.html')
+								h5 Название таблици
+								ul
+									li Название колонки 1
+									li Название колонки 2
+									li Название колонки 3
+									li Название колонки 4
+									li Название колонки 5
+									li Название колонки 6
 					.col
-						a.promo__item(href='table.html')
-							h5 Название таблици
-							ul
-								li Название колонки 1
-								li Название колонки 2
-								li Название колонки 3
-								li Название колонки 4
-								li Название колонки 5
-								li Название колонки 6
-								li Название колонки 7
-								li Название колонки 8
+						.promo__item
+							a.btn.btn-primary(href='edit-table.html', data-toggle="tooltip", data-placement="top", title="Редактировать таблицу")
+								i.icon-pencil
+							a.promo__item-link(href='table.html')
+								h5 Название таблици
+								ul
+									li Название колонки 1
+									li Название колонки 2
+									li Название колонки 3
 					.col
-						a.promo__item(href='table.html')
-							h5 Название таблици
-							ul
-								li Название колонки 1
-								li Название колонки 2
-								li Название колонки 3
-								li Название колонки 4
-								li Название колонки 5
-								li Название колонки 6
-								li Название колонки 7
-								li Название колонки 8
-								li Название колонки 9
+						.promo__item
+							a.btn.btn-primary(href='edit-table.html', data-toggle="tooltip", data-placement="top", title="Редактировать таблицу")
+								i.icon-pencil
+							a.promo__item-link(href='table.html')
+								h5 Название таблици
+								ul
+									li Название колонки 1
+									li Название колонки 2
+									li Название колонки 3
+									li Название колонки 4
+									li Название колонки 5
+									li Название колонки 6
+									li Название колонки 7
+									li Название колонки 8
 					.col
-						a.promo__item(href='table.html')
-							h5 Название таблици
-							ul
-								li Название колонки 1
-								li Название колонки 2
-								li Название колонки 3
-								li Название колонки 4
-								li Название колонки 5
-								li Название колонки 6
-								li Название колонки 7
-								li Название колонки 8
-								li Название колонки 9
-								li Название колонки 10
+						.promo__item
+							a.btn.btn-primary(href='edit-table.html', data-toggle="tooltip", data-placement="top", title="Редактировать таблицу")
+								i.icon-pencil
+							a.promo__item-link(href='table.html')
+								h5 Название таблици
+								ul
+									li Название колонки 1
+									li Название колонки 2
+									li Название колонки 3
+									li Название колонки 4
+									li Название колонки 5
+									li Название колонки 6
 					.col
-						a.promo__item(href='table.html')
-							h5 Название таблици Название таблици
-							ul
-								li Название колонки 1
-								li Название колонки 2
-								li Название колонки 3
-								li Название колонки 4
-								li Название колонки 5
+						.promo__item
+							a.btn.btn-primary(href='edit-table.html', data-toggle="tooltip", data-placement="top", title="Редактировать таблицу")
+								i.icon-pencil
+							a.promo__item-link(href='table.html')
+								h5 Название таблици
+								ul
+									li Название колонки 1
 					.col
-						a.promo__item(href='table.html')
-							h5 Название таблици
-							ul
-								li Название колонки 1
-								li Название колонки 2
+						.promo__item
+							a.btn.btn-primary(href='edit-table.html', data-toggle="tooltip", data-placement="top", title="Редактировать таблицу")
+								i.icon-pencil
+							a.promo__item-link(href='table.html')
+								h5 Название таблици
+								ul
+									li Название колонки 1
+									li Название колонки 2
+									li Название колонки 3
+									li Название колонки 4
 					.col
-						a.promo__item(href='table.html')
-							h5 Название таблици
-							ul
-								li Название колонки 1
-								li Название колонки 2
-								li Название колонки 3
-								li Название колонки 4
-								li Название колонки 5
+						.promo__item
+							a.btn.btn-primary(href='edit-table.html', data-toggle="tooltip", data-placement="top", title="Редактировать таблицу")
+								i.icon-pencil
+							a.promo__item-link(href='table.html')
+								h5 Название таблици
+								ul
+									li Название колонки 1
+									li Название колонки 2
+									li Название колонки 3 Название колонки 3
+									li Название колонки 4
+									li Название колонки 5
+									li Название колонки 6
 					.col
-						a.promo__item(href='table.html')
-							h5 Название таблици
-							ul
-								li Название колонки 1
-								li Название колонки 2
-								li Название колонки 3
-								li Название колонки 4
-								li Название колонки 5
-								li Название колонки 6
-								li Название колонки 7
+						.promo__item
+							a.btn.btn-primary(href='edit-table.html', data-toggle="tooltip", data-placement="top", title="Редактировать таблицу")
+								i.icon-pencil
+							a.promo__item-link(href='table.html')
+								h5 Название таблици
+								ul
+									li Название колонки 1
+									li Название колонки 2
+									li Название колонки 3 Название колонки 3
+									li Название колонки 4
+									li Название колонки 5
+									li Название колонки 6
+									li Название колонки 7
+									li Название колонки 8
+									li Название колонки 9
 					.col
-						a.promo__item(href='table.html')
-							h5 Название таблици
-							ul
-								li Название колонки 1
-								li Название колонки 2
-								li Название колонки 3
+						.promo__item
+							a.btn.btn-primary(href='edit-table.html', data-toggle="tooltip", data-placement="top", title="Редактировать таблицу")
+								i.icon-pencil
+							a.promo__item-link(href='table.html')
+								h5 Название таблици
+								ul
+									li Название колонки 1
+									li Название колонки 2
+									li Название колонки 3
+									li Название колонки 4
 
 
 append scripts
