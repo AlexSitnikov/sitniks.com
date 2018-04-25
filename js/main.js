@@ -52,13 +52,6 @@ jQuery(document).ready(function($) {
 	  percentPosition: true
 	});
 
-	$('.tables-group__items').masonry({
-	  // options
-	  itemSelector: '.col',
-	  columnWidth: '.col',
-	  percentPosition: true
-	});
-
 
 	// Подключения плагина маски телефона
 	function phoneMask() {
