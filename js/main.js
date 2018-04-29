@@ -93,4 +93,10 @@ jQuery(document).ready(function($) {
 			});
 	};
 	modalShow();
+
+	// Датапикер
+	$('.date').datepicker({
+		clearButton: true,
+		autoClose: true,
+	});
 });
