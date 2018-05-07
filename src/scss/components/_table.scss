@@ -38,12 +38,12 @@
 }
 
 .td-comment {
-	max-height: 50px;
+	max-height: 52px;
 	overflow: hidden;
 	position: relative;
 
-	&:after {
-		content: '';
+	&__more {
+		display: none;
 		position: absolute;
 		bottom: 0;
 		left: 0;
